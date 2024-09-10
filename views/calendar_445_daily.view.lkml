@@ -1,5 +1,5 @@
 view: calendar_445_daily {
-  sql_table_name: `looker-core-4cjg.retail.wakefern_445_daily` ;;
+  sql_table_name: `looker-core-4cjg.retail.445_daily` ;;
 
   dimension_group: current {
     type: time
