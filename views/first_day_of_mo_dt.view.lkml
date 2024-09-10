@@ -6,12 +6,12 @@ view: first_day_of_mo_dt {
         , fscl_yr_mo_num as fscl_yr_mo_num
         , fscl_day_of_mo_num as fscl_day_of_mo_num
         , ly_fscl_day_date as first_date_of_mo_ly
-        from `looker-core-4cjg.retail.wakefern_445_daily`
+        from `looker-core-4cjg.retail.445_daily`
         where fscl_day_of_mo_num = 1
         and fscl_yr_mo_num =
         (
           select fscl_yr_mo_num
-          from `looker-core-4cjg.retail.wakefern_445_daily`
+          from `looker-core-4cjg.retail.445_daily`
           where date_key = date('2023-12-18')
         )
         ;;
