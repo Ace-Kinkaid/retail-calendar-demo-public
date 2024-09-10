@@ -2,7 +2,7 @@ view: curr_date_ly_dt {
   fields_hidden_by_default: yes
   derived_table: {
     sql: select ly_fscl_day_date as curr_date_ly
-        from `looker-core-4cjg.retail.wakefern_445_daily`
+        from `looker-core-4cjg.retail.445_daily`
         where date_key = date('2023-12-18')
         ;;
   }
