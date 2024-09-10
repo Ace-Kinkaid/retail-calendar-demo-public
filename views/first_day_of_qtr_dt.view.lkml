@@ -6,12 +6,12 @@ view: first_day_of_qtr_dt {
           date_key as first_date_of_qtr
         , fscl_yr_qtr_num as fscl_yr_qtr_num
         , fscl_day_ofqtr_num as fscl_day_ofqtr_num
-        from `looker-core-4cjg.retail.wakefern_445_daily`
+        from `looker-core-4cjg.retail.445_daily`
         where fscl_day_ofqtr_num = 1
         and fscl_yr_qtr_num =
           (
            select fscl_yr_qtr_num
-           from `looker-core-4cjg.retail.wakefern_445_daily`
+           from `looker-core-4cjg.retail.445_daily`
            where date_key = date('2023-12-18')
         ) ;;
     }
